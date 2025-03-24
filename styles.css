@@ -66,7 +66,7 @@ body {
 /* Hero Section Styles */
 .hero-section {
   height: 100vh;
-  min-height: 800px;
+  min-height: 600px;
   margin-top: 80px;
   position: relative;
   overflow: hidden;
@@ -84,8 +84,15 @@ body {
 
 .hero-content {
   z-index: 1;
-  position: relative;
-  margin-top: 500px; /* Increased from 200px to 300px */
+  position: absolute;
+  bottom: 15%; /* Position from bottom */
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .hero-content h1 {
@@ -147,8 +154,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
-  filter: brightness(80%);
+  object-position: center;
+  filter: brightness(65%);
 }
 
 /* About Section Styles */
@@ -708,8 +715,14 @@ body {
     margin: 5px 15px;
   }
 
+  .hero-content {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
   .hero-content p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
   }
 
   .sites-grid,
@@ -770,25 +783,24 @@ body {
 
   /* Hero section adjustments */
   .hero-section {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 90px);
+    margin-top: 90px;
     min-height: 500px;
-    margin-top: 120px;
   }
 
   .hero-content {
-    margin-top: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    bottom: 20%;
+  }
+
+  .main-image {
     height: 100%;
+    object-position: center;
+    transform: scale(1.1);
   }
 
   .hero-content p {
     font-size: 1.8rem;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
   }
 
   .cta-button {
@@ -840,12 +852,23 @@ body {
   }
 
   .hero-section {
-    margin-top: 100px;
-    min-height: 400px;
+    margin-top: 85px;
+    min-height: 450px;
+  }
+
+  .hero-content {
+    bottom: 15%;
+  }
+
+  .main-image {
+    transform: scale(1.2);
   }
 
   .hero-content p {
     font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .cta-button {
@@ -914,9 +937,6 @@ html {
   .hero-content {
     margin-top: 0;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    backdrop-filter: blur(4px);
   }
 
   .hero-content p {
