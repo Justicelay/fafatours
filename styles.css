@@ -87,7 +87,7 @@ body {
 .hero-content {
   z-index: 1;
   position: absolute;
-  bottom: 5%;
+  bottom: 30%; /* Increased from 5% to move content higher up */
   left: 0;
   right: 0;
   padding: 20px;
@@ -722,7 +722,7 @@ body {
   .hero-content {
     margin-top: 50px;
     padding: 20px;
-    bottom: 7%; /* Adjusted for tablets */
+    bottom: 35%; /* Adjusted for tablets */
   }
 
   .hero-content h1 {
@@ -862,7 +862,8 @@ body {
   }
 
   .hero-content {
-    bottom: 3%; /* Moved even lower for mobile */
+    bottom: 25%; /* Adjusted for mobile */
+    padding: 15px;
   }
 
   .main-image {
